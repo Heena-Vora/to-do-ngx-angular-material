@@ -1,0 +1,15 @@
+<div class="app-grid-main">
+  <app-top-bar [title]="title" (topBarOutput)="topBarActions($event)"></app-top-bar>
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer mode="side" disableClose="true" opened="true">
+      <app-side-bar [isExpanded]="isExpanded"></app-side-bar>
+    </mat-drawer>
+    <mat-drawer-content>
+      <router-outlet></router-outlet>
+      <button mat-fab color="accent" id="todo-add" (click)="openToDoForm()">
+        <mat-icon>add_task</mat-icon>
+      </button>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  <app-footer-bar></app-footer-bar>
+</div>

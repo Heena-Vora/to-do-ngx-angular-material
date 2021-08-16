@@ -1,0 +1,10 @@
+<mat-nav-list>
+  <mat-list-item [routerLink]="['/home']" [routerLinkActive]="['active']">
+    <mat-icon  color="primary" mat-list-icon>checklist</mat-icon>
+    <h4 mat-line *ngIf="isExpanded">List</h4>
+  </mat-list-item>
+  <mat-list-item >
+    <mat-icon  [routerLink]="['/trash']" [routerLinkActive]="['active']" color="primary" mat-list-icon>add_task</mat-icon>
+    <h4 mat-line *ngIf="isExpanded">Add Task</h4>
+  </mat-list-item>
+</mat-nav-list>

@@ -1,0 +1,10 @@
+.app-grid-main {
+  display: grid;
+  grid-template-rows: auto 1fr 56px;
+  height: 100%;
+}
+#todo-add {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+}
